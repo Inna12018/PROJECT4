@@ -8,16 +8,22 @@ $(function () {
     slidesToScroll: 1,
     arrows: true,
     fade: true,
-    asNavFor: ".slider__small-inner",
+    asNavFor: ".thumbs-inner",
   });
 
-  $(".slider__small-inner").slick({
+  $(".thumbs-inner").slick({
     slidesToShow: 6,
-    slidesToScroll: 1,
+    slidesToScroll: 6,
     asNavFor: ".slider__inner",
     dots: false,
     centerMode: false,
     focusOnSelect: true,
     arrows: false,
   });
+
+
+
+
 });
+
+
