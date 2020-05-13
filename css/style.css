@@ -35,6 +35,8 @@ li {
 
 body {
     background-image: url(../images/background.jpg);
+    background-position: top center;
+    background-size: cover;
 }
 
 .container {
@@ -80,10 +82,41 @@ body {
 
 /* ДЗ ЧАСТЬ 2 */
 
+.slider -x {
+    overflow: hidden;
+
+}
+
+.slider__inner {
+    position: relative;
+}
+
+.slider__inner::before, 
+.slider__inner::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 60px;
+    width: 100%;
+    background-color: #f3b29d;
+}
+
+.slider__inner::before {
+    left: 100%;
+    margin-left: 20px;
+
+}
+
+.slider__inner::after {
+    right: 100%;
+    margin-right: 20px;
+
+}
+
 .slider__item {
     min-height: 400px;
     background-size: cover;
-    background-position: center;
+    background-position:  top center;
     background-repeat: no-repeat;
     margin-bottom: 20px;
     position: relative;
@@ -92,7 +125,7 @@ body {
 .thumbs-item {
     height: 120px;
     width: 140px;
-    background-position: center;
+    background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: 0;
@@ -109,29 +142,6 @@ body {
 
 .slider {
     position: relative;
-}
-
-.slider::before,
-.footer::before {
-    content: "";
-    min-height: 60px;
-    width: calc((100% - 960px)/2);
-    background-color: #f2ae9c;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-}
-
-
-.slider::after,
-.footer::after {
-    content: "";
-    height: 60px;
-    width: calc ((100% - 960px)/2);
-    background-color: #f2ae9c;
-    position: absolute;
-    right: 0;
-    top: 0px;
 }
 
 .slider__item-title {
@@ -324,26 +334,8 @@ body {
     padding: 32px;
 }
 
-
-
-
-.footer::before {
-    content: "";
-    height: 100%;
-    
-    
-}
-
-.footer::after {
-    content: "";
-    height: 100%;
-    
-    
-}
-  
 .footer__links a {
     color: #f3b29d;
-
 }
 
 .footer__text {
@@ -352,16 +344,40 @@ body {
 
 .footer__text-link a {
     color: #fff;
-   
-
 }
 
-.footer_wrapper {
+.footer__inner {
+    position: relative;
     background-color: #e8663c;
     display: flex;
     justify-content: space-between;
     padding: 40px 40px 33px 33px;
     color: #fff;
+}
+
+.footer__inner::before, 
+.footer__inner::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #f3b29d;
+   
+}
+
+.footer__inner::before {
+    left: 100%;
+    margin-left: 20px;
+    background-position: top left;
+
+}
+
+.footer__inner::after {
+    right: 100%;
+    margin-right: 20px;
+    background-position:top right;
+
 }
 
 .footer__container {
