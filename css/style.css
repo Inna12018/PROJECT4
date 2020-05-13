@@ -49,23 +49,11 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 78px;
-}
-
-.menu {
-    margin-top: 14px;
-}
-
-.menu__list {
-    display: flex;
+    height: 78px;
 }
 
 .menu li+li {
     margin-left: 28px;
-}
-
-.menu li {
-    display: inline-block;
 }
 
 .menu__list-link {
@@ -80,19 +68,29 @@ body {
     color: #e8663c;
 }
 
+.menu__btn {
+    width: 30px;
+    display: none;
+}
+
+.menu__row {
+    width: 100%;
+    background-color: #000;
+    height: 4px;
+    margin-bottom: 4px;
+}
+
 /* ДЗ ЧАСТЬ 2 */
 
 .slider -x {
     overflow: hidden;
-
 }
 
 .slider__inner {
     position: relative;
 }
 
-.slider__inner::before, 
-.slider__inner::after {
+.slider__inner::before, .slider__inner::after {
     content: "";
     position: absolute;
     top: 0;
@@ -104,23 +102,23 @@ body {
 .slider__inner::before {
     left: 100%;
     margin-left: 20px;
-
 }
 
 .slider__inner::after {
     right: 100%;
     margin-right: 20px;
-
 }
 
 .slider__item {
     min-height: 400px;
     background-size: cover;
-    background-position:  top center;
+    background-position: top center;
     background-repeat: no-repeat;
     margin-bottom: 20px;
     position: relative;
 }
+
+
 
 .thumbs-item {
     height: 120px;
@@ -355,29 +353,25 @@ body {
     color: #fff;
 }
 
-.footer__inner::before, 
-.footer__inner::after {
+.footer__inner::before, .footer__inner::after {
     content: "";
     position: absolute;
     top: 0;
     height: 100%;
     width: 100%;
     background-color: #f3b29d;
-   
 }
 
 .footer__inner::before {
     left: 100%;
     margin-left: 20px;
     background-position: top left;
-
 }
 
 .footer__inner::after {
     right: 100%;
     margin-right: 20px;
-    background-position:top right;
-
+    background-position: top right;
 }
 
 .footer__container {
@@ -407,3 +401,19 @@ body {
 .footer__cosial-links li+li {
     margin-left: 5px;
 }
+
+@media (max-width: 960px){
+    .menu__btn {
+        display: block;
+    }
+    
+    .thumbs,
+    .slider__inner::before, 
+    .slider__inner::after, 
+    .footer__inner::before,
+    .footer__inner::after {
+        display: none;
+    }
+
+}
+    
