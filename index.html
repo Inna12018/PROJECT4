@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="css/slick.css" />
   <link rel="stylesheet" href="css/slick-theme.css" />
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/media.css">
 </head>
 
 <body>
@@ -18,105 +19,125 @@
         <a class="header__logo" href="#">
           <img src="images/logo.png" alt="logo" />
         </a>
-        <nav class="menu">
-          <div class="menu__btn">
-            <div class="menu__row"></div>
-            <div class="menu__row"></div>
-            <div class="menu__row"></div>
+
+        <nav class="header__menu">
+          <div class="header__menu-btn">
+            <div class="header__menu-row"></div>
+            <div class="header__menu-row"></div>
+            <div class="header__menu-row"></div>
           </div>
-          <ul class="menu__list">
-            <li class="menu__list-nav">
-              <a class="menu__list-link menu__list-link--active" href="#">home</a>
+
+          <ul class="header__menu-list">
+            <li class="header__menu__item">
+              <a class="header__menu-link header__menu-link--active" href="#">home</a>
             </li>
-            <li class="menu__list-nav">
-              <a class="menu__list-link" href="#">about as</a>
+            <li class="header__menu__item">
+              <a class="header__menu-link" href="#">about as</a>
             </li>
-            <li class="menu__list-nav">
-              <a class="menu__list-link" href="#">blog</a>
+            <li class="header__menu__item">
+              <a class="header__menu-link" href="#">blog</a>
             </li>
-            <li class="menu__list-nav">
-              <a class="menu__list-link" href="#">portfolio</a>
+            <li class="header__menu__item">
+              <a class="header__menu-link" href="#">portfolio</a>
             </li>
-            <li class="menu__list-nav">
-              <a class="menu__list-link" href="#">contact us</a>
+            <li class="header__menu__item">
+              <a class="header__menu-link" href="#">contact us</a>
             </li>
           </ul>
         </nav>
       </div>
     </div>
   </header>
-  <!--ДЗ ЧАСТЬ2-->
+ 
 
   <section class="slider">
     <div class="container">
       <div class="slider__inner">
         <div class="slider__item" style="background-image: url(images/slider-item1.jpg);">
+        <div class="slider__item-box">
           <div class="slider__item-title">
             Slide One
-            <p>
+            </div>
+            <div class="slider__item-text">
               Lorem ipsum dolor sit amet, malorum recteque reprehendunt ea
               vel. Urbanitas adolescens vim te, per at tritani aperiri. Adhuc
               invenire convenire his ea.
-            </p>
+            </div>
           </div>
         </div>
+       
 
         <div class="slider__item" style="background-image: url(images/slider-item2.jpg);">
+        <div class="slider__item-box">
           <div class="slider__item-title">
             Slide two
-            <p>
+            </div>
+            <div class="slider__item-text">
               Lorem ipsum dolor sit amet, malorum recteque reprehendunt ea
               vel. Urbanitas adolescens vim te, per at tritani aperiri. Adhuc
               invenire convenire his ea.
-            </p>
+            </div>
           </div>
         </div>
+        
 
         <div class="slider__item" style="background-image: url(images/slider-item3.jpg);">
+        <div class="slider__item-box">
           <div class="slider__item-title">
             Slide three
-            <p>
+            </div>
+            <div class="slider__item-text">
               Lorem ipsum dolor sit amet, malorum recteque reprehendunt ea
               vel. Urbanitas adolescens vim te, per at tritani aperiri. Adhuc
               invenire convenire his ea.
-            </p>
+            </div>
           </div>
         </div>
+        
 
         <div class="slider__item" style="background-image: url(images/slider-item4.jpg);">
+        <div class="slider__item-box">
           <div class="slider__item-title">
             Slide four
-            <p>
+            </div>
+            <div class="slider__item-text">
               Lorem ipsum dolor sit amet, malorum recteque reprehendunt ea
               vel. Urbanitas adolescens vim te, per at tritani aperiri. Adhuc
               invenire convenire his ea.
-            </p>
+            </div>
           </div>
         </div>
+        
 
         <div class="slider__item" style="background-image: url(images/slider-item5.jpg);">
+        <div class="slider__item-box">
           <div class="slider__item-title">
             Slide five
-            <p>
+            </div>
+            <div class="slider__item-text">
               Lorem ipsum dolor sit amet, malorum recteque reprehendunt ea
               vel. Urbanitas adolescens vim te, per at tritani aperiri. Adhuc
               invenire convenire his ea.
-            </p>
+            </div>
           </div>
         </div>
+       
 
         <div class="slider__item" style="background-image: url(images/slider-item6.jpg);">
+        <div class="slider__item-box">
           <div class="slider__item-title">
             Slide six
-            <p>
+            </div>
+            <div class="slider__item-text">
               Lorem ipsum dolor sit amet, malorum recteque reprehendunt ea
               vel. Urbanitas adolescens vim te, per at tritani aperiri. Adhuc
               invenire convenire his ea.
-            </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
+   
   </section>
 
   <section class="thumbs">
@@ -137,63 +158,57 @@
     </div>
   </section>
 
- <!--PART3--> 
 
-  <section class="services">
+
+  <section class="items">
     <div class="container">
-      <div class="service__items">
+      <div class="items__inner">
 
-        <div class="service__item">
-          <div class="service__title icon-1">
+        <div class="item">
+          <div class="item__title icon-1">
             Check out my latest portfolio items
           </div>
-          <div class="service__text">
+          <div class="item__text">
             Maecenas ipsum metus, semper hendrerit varius mattis, congue sit
             amet tellus. Aliquam ullamcorper dui sed magna posue re ut
             elementum enim rutrum. Nam mi erat, porta id ultrices nec,
             pellentesque vel nunc. Cras varius fermentum iaculis. Aenean
             sodales nibh non lectus tempor a interdum justo ultricies.
           </div>
-          <div class="service__btn">
-            <a class="service__items-btn" href="#">More</a>
-          </div>
+          <a class="item__btn-link" href="#">More</a>
         </div>
 
-        <div class="service__item">
-          <div class="service__title icon-2">
+        <div class="item">
+          <div class="item__title icon-2">
             Offer Top Notch Quality Work & Services
           </div>
-          <div class="service__text">
+          <div class="item__text">
             Maecenas ipsum metus, semper hendrerit varius mattis, congue sit
             amet tellus. Aliquam ullamcorper dui sed magna posue re ut
             elementum enim rutrum. Nam mi erat, porta id ultrices nec,
             pellentesque vel nunc. Cras varius fermentum iaculis. Aenean
             sodales nibh non lectus tempor a interdum justo ultricies.
           </div>
-          <div class="service__btn">
-            <a class="service__items-btn" href="#">More</a>
-          </div>
+          <a class="item__btn-link" href="#">More</a>
         </div>
 
-        <div class="service__item">
-          <div class="service__title icon-3">
+        <div class="item">
+          <div class="item__title icon-3">
             Follow Me on Twitter, Facebook & Pinterest
           </div>
-          <div class="service__text">
+          <div class="item__text">
             Maecenas ipsum metus, semper hendrerit varius mattis, congue sit
             amet tellus. Aliquam ullamcorper dui sed magna posue re ut
             elementum enim rutrum. Nam mi erat, porta id ultrices nec,
             pellentesque vel nunc. Cras varius fermentum iaculis. Aenean
             sodales nibh non lectus tempor a interdum justo ultricies.
           </div>
-          <div class="service__btn"></div>
-          <a class="service__items-btn" href="#">More</a>
+          <a class="item__btn-link" href="#">More</a>
         </div>
+
       </div>
     </div>
   </section>
-
-  <!--PART 4-->
 
   <section class="works">
     <div class="container">
@@ -201,49 +216,49 @@
         <span>Recent Works</span>
       </div>
 
-      <div class="galery__items">
+      <div class="works__inner">
 
-        <div class="galery__item">
-          <a class="galery__img" href="#">
+        <div class="works__item">
+          <a class="works__img" href="#">
             <img src="images/recent_worck -1.png" alt="">
           </a>
-          <div class="galery__title">
-            <a href="#">Character Design</a>
-            <span class="galery__data">June 15, 2012</span>
+          <div class="works__title">
+            <a class="works__title-link" href="#">Character Design</a>
+            <span class="works__data">June 15, 2012</span>
           </div>
         </div>
 
 
 
-        <div class="galery__item">
-          <a class="galery__img" href="#">
+        <div class="works__item">
+          <a class="works__img" href="#">
             <img src="images/recent_worck -2.png" alt="">
           </a>
-          <div class="galery__title">
-            <a href="#">Character Design</a>
-            <span class="galery__data">June 15, 2012</span>
+          <div class="works__title">
+            <a class="works__title-link" href="#">Brochure  Design</a>
+            <span class="works__data">June 15, 2012</span>
           </div>
         </div>
 
 
-        <div class="galery__item">
-          <a class="galery__img" href="#">
+        <div class="works__item">
+          <a class="works__img" href="#">
             <img src="images/recent_worck -3.png" alt="">
           </a>
-          <div class="galery__title">
-            <a href="#">Character Design</a>
-            <span class="galery__data">June 15, 2012</span>
+          <div class="works__title">
+            <a class="works__title-link" href="#">Social Media Buttons</a>
+            <span class="works__data">June 15, 2012</span>
           </div>
         </div>
 
 
-        <div class="galery__item">
-          <a class="galery__img" href="#">
+        <div class="works__item">
+          <a class="works__img" href="#">
             <img src="images/recent_worck -4.png" alt="">
           </a>
-          <div class="galery__title">
-            <a href="#">Character Design</a>
-            <span class="galery__data">June 15, 2012</span>
+          <div class="works__title">
+            <a class="works__title-link" href="#">10 Amazing Websites</a>
+            <span class="works__data">June 15, 2012</span>
           </div>
         </div>
 
@@ -255,11 +270,11 @@
   <footer class="footer">
     <div class="container">
       <div class="footer__inner">
-        <div class="footer__container">
+        <div class="footer__box footer__content">
           <div class="footer__title">
             About Jetro
           </div>
-          <div class="footer_text">
+          <div class="footer__text">
             <p>
               Lorem ipsum dolor sit amet, malorum recteque reprehendunt ea vel.
               Urbanitas adolescens vim te, per at tritani aperiri. Adhuc invenire
@@ -274,67 +289,71 @@
           </div>
         </div>
 
-        <div class="footer__container footer__links">
+        <div class="footer__box">
           <div class="footer__title">
             Twitter Widget
           </div>
 
-          <div class="footer_text">
-            <a href="#">@pixelmater</a> What an awesome design with great
+          <div class="footer__text">
+            <a class="footer__text-link" href="#">@pixelmater</a> What an awesome design with great
             functionality :)
-            <p>about 1 hour ago</p>
-            <a href="#">@designdude</a> What an awesome design with great
+
+            <p><span>about 1 hour ago</span></p>
+
+            <a class="footer__text-link" href="#">@designdude</a> What an awesome design with great
             functionality :)
-            <p>about 2 hour ago</p>
-            Follow <a href="#">@bestpsdfreebies</a>
+            
+            <p><span>about 2 hour ago</span></p>
+            Follow <a  class="footer__text-link" href="#">@bestpsdfreebies</a>
           </div>
         </div>
 
 
-        <div class="footer__container">
+        <div class="footer__box">
           <div class="footer__title">
             Contact Us
           </div>
-          <div class="footer__text footer__text-link">
+          <div class="footer__text ">
             Lorem ipsum dolor sit amet, malorum recteque reprehendunt ea vel.
             Urbanitas adolescens vim te, per at tritani aperiri.
-            <p><a class="footer__email" href="#">information@jetro.com</a></p>
-            <a href="tel:12223334444">1.222.333.4444</a>
+            <p><a class="footer__text-contact" href="#">information@jetro.com</a></p>
+            <a class="footer__text-contact" href="tel:12223334444">1.222.333.4444</a>
           </div>
 
-          <div class="footer__cosial-links">
-            <ul>
-              <li>
-                <a class="footer__icon-4" href="#">
+          <div class="footer__cosial">
+            <ul class="footer__cosial-list">
+              <li class="footer__cosial-item" >
+                <a class="footer__cosial-icon" href="#">
                   <img src="images/facebook.png" alt="photo">
                 </a>
               </li>
-              <li>
-                <a class="footer__icon-5" href="#">
+              <li class="footer__cosial-item">
+                <a class="footer__cosial-icon" href="#">
                   <img src="images/twitter.png" alt="photo">
                 </a>
-              </li>
-              <li>
-                <a class="footer__icon-6" href="#">
+              </li >
+              <li class="footer__cosial-item">
+                <a class="footer__cosial-icon" href="#">
                   <img src="images/email.png" alt="">
                 </a>
               </li>
-              <li>
-                <a class="footer__icon-7" href="#">
+              <li class="footer__cosial-item">
+                <a class="footer__cosial-icon" href="#">
                   <img src="images/rss.png" alt="">
                 </a>
               </li>
-              <li>
-                <a class="footer__icon-8" href="#">
+              <li class="footer__cosial-item">
+                <a class="footer__cosial-icon" href="#">
                   <img src="images/vimeo.png" alt="">
                 </a>
               </li>
             </ul>
-
           </div>
+
         </div>
       </div>
-    </div>
+
+      </div>
   </footer>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
