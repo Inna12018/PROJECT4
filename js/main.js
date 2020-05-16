@@ -9,7 +9,7 @@ $(function () {
     arrows: true,
     fade: true,
     asNavFor: ".thumbs-inner",
-    
+
   });
 
   $(".thumbs-inner").slick({
@@ -21,11 +21,11 @@ $(function () {
     focusOnSelect: true,
     arrows: false,
   });
-  
 
-$('.header__menu-btn').on('click', function(){
-  $('.header__menu > ul').slideToggle();
-}); 
+
+  $('.header__menu-btn').on('click', function () {
+    $('.header__menu > ul').slideToggle();
+  });
 
 
 });

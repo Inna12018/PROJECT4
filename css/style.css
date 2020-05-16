@@ -24,6 +24,9 @@ li {
 
 body {
     background-image: url(../images/background.jpg);
+    font-family: "Bebas";
+    font-weight: 400;
+
 }
 
 .container {
@@ -45,7 +48,7 @@ body {
     list-style: none;
 }
 
-.header__menu li+li {
+.header__menu__item+.header__menu__item {
     margin-left: 26px;
 }
 
@@ -55,7 +58,6 @@ body {
     color: #b9b9b9;
     text-decoration: none;
     display: block;
-    font-family: "Bebas";
     text-transform: uppercase;
     transition: color .2s;
 }
@@ -147,8 +149,6 @@ body {
 
 .slider__item-title {
     font-size: 18px;
-    font-weight: 400;
-    font-family: "Bebas";
     margin-bottom: 20px;
 }
 
@@ -170,19 +170,17 @@ body {
 }
 
 .slick-prev {
-    left: 27px;
+    left: 21px;
 }
 
 .slick-next {
-    right: 24px;
+    right: 15px;
 }
 
 .items {
-    font-family: "HelveticaNeue";
-    font-weight: 400;
     font-size: 12px;
     color: #414141;
-    margin-bottom: 45px;
+    margin-bottom: 39px;
 }
 
 .items__inner {
@@ -192,15 +190,14 @@ body {
 
 .item {
     width: 277px;
-    font-family: "Bebas";
+
 }
 
 .item__title {
     font-size: 18px;
     line-height: 24px;
-    font-weight: 400;
     color: #e8663c;
-    margin-bottom: 33px;
+    margin-bottom: 18px;
     padding-left: 70px;
     position: relative;
 }
@@ -226,7 +223,6 @@ body {
 
 .item__text {
     font-size: 12px;
-    font-weight: 400;
     font-family: "HelveticaNeue";
     line-height: 18px;
     color: #414141;
@@ -239,21 +235,18 @@ body {
     background-color: #e8663c;
     padding: 10px 15px;
     bottom: 0;
-    font-family: "Bebas";
-    font-weight: 400;
     text-decoration: none;
 }
 
-.works_title {
+.works__title {
     margin-bottom: 24px;
     background-image: url(../images/line.jpg);
     font-size: 18px;
-    font-family: "Bebas";
     color: #e8663c;
     text-transform: uppercase;
 }
 
-.works_title span {
+.works__title span {
     display: inline-block;
     padding-right: 19px;
     background-color: #fff;
@@ -269,26 +262,22 @@ body {
     display: block;
 }
 
-.works__title {
+.works__title-galery {
     border: 1px solid #b9b9b9;
     border-top: 0px;
     padding: 12px;
 }
 
 .works__title-link {
-    font-family: "Bebas";
     text-transform: uppercase;
     font-size: 16px;
     line-height: 18px;
-    font-weight: 400;
     text-decoration: none;
     color: #b9b9b9;
 }
 
 .works__data {
-    font-family: "Bebas";
     text-transform: uppercase;
-    font-weight: 400;
     display: block;
     font-size: 11px;
     line-height: 18px;
@@ -300,7 +289,7 @@ body {
     background-color: #e8663c;
     display: flex;
     justify-content: space-between;
-    padding: 40px 40px 33px 33px;
+    padding: 36px 40px 12px 33px;
     color: #fff;
 }
 
@@ -335,14 +324,11 @@ body {
 .footer__title {
     margin-bottom: 30px;
     font-size: 20px;
-    font-family: "Bebas";
-    font-weight: 400;
     color: #fff;
 }
 
 .footer__text {
     font-family: "HelveticaNeue";
-    font-weight: 400;
     font-size: 12px;
     line-height: 14px;
 }
@@ -369,12 +355,16 @@ body {
     color: #fff;
 }
 
-.footer__cosial-list {
+.footer__text-email {
+    margin-top: 14px;
+}
+
+.footer__social-list {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-.footer__cosial li+li {
+.footer__social-item+.footer__social-item {
     margin-left: 5px;
 }
